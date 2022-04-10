@@ -1,0 +1,243 @@
+@font-face {
+	font-family: "Heading";
+	src: url("/res/font/heading.woff");
+}
+@font-face {
+	font-family: "Paragraph";
+	src: url("/res/font/PICO-8.ttf");
+}
+body {
+    background-color:black;
+    background-image:linear-gradient(to right, #00000080,#00000000),
+    linear-gradient(to left, #00000080,#00000000),
+    url(/res/img/hero.png),
+    linear-gradient(rgba(0, 0, 0, 0),hsla(0, 0%, 0%, 0)),
+    url(/res/img/bgpost.png);
+    background-position-x:0,100%,100%,0, center;
+    background-position-y:0,0,-100px,0, center;
+    background-repeat:no-repeat;
+    background-size:10%,10%,500px,cover,cover;
+    background-attachment: fixed;
+    font-family: "Paragraph", Arial, sans-serif;
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+}
+h1, h5{
+    margin:5px;
+    padding:5px;
+    color:rgb(198, 233, 255);
+    text-shadow: #000000 0 0 5px,#4adbffb4 0 0 25px;
+
+    
+}
+h1{
+    font-family: "Heading";
+    font-size:64px;
+}
+h5{
+    font-family: "Paragraph";
+    font-size:14px;
+}
+header{
+    
+    background-repeat:no-repeat;
+    color:white;
+    margin:0px;
+    padding:0px;
+    text-align:left;
+}
+section:not(.spacing){
+    background:#0006;
+    box-shadow:rgb(0, 0, 0) 0 0 1px;
+    color:white;
+    padding:10px;
+    margin:6px 10%;
+    display:flex;
+    flex-direction:row;
+}
+.header-head{
+    padding:40px 80px 70px;
+}
+.logo a{
+    background-image:url(/res/img/logo.png);
+    background-repeat:no-repeat;
+    display:inline-block;
+    height:30px;
+    text-indent: -10000px;
+    width:180px;
+}
+
+.features figure{
+    margin:auto;
+    width:200px;
+    text-align:center;
+}
+.features figure img{
+    width:20vw;
+    box-shadow: rgba(24, 24, 24, 1) 0 0 5px;
+}
+section div {
+    width:100px;
+    margin:auto;
+
+}
+
+header div {
+    padding:0px;
+    margin:0px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type:none;
+
+}
+li {
+    display: inline-block;
+    margin:0;
+    font-size: 10px;
+}
+
+#page-container{
+    position:relative;
+    min-height:100vh;
+}
+#content-wrap{
+    padding-top:50px;
+    padding-bottom:60px;
+}
+#footer{
+    background:black;
+    color:white;
+    position: absolute;
+    bottom:0;
+    width:100%;
+}
+.alt-logo{display: none;}
+/*#region NAV BAR*/
+nav {
+ 
+    background:linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.8));
+    box-shadow:black 0 0 10px;
+    margin:0px 0 0 0;
+    width:100%;
+    position:fixed;
+    z-index: 1;
+
+}
+nav ul{
+    margin:5px 10% 5px 10%;
+}
+nav ul li:not(.logo) a{
+    color:#C4E7EB90;
+    vertical-align: -12px;
+    padding:0px 7px 4px;
+    margin:0px -10px 0px 0px;
+    text-decoration:none;
+    transition:text-shadow 0.2s,color 0.2s;
+
+    
+}
+nav ul li:not(.logo) a:not(.mute){
+    border-bottom:2px solid;
+
+}
+.mute:hover{
+     cursor:pointer;
+
+}
+.mute{
+    position: absolute;
+    right: 15px;
+}
+nav ul li:not(.logo) a:hover{
+    color:white;  
+    text-shadow:#80f7ff 0 0 30px;
+}
+.patreon a{
+    color:#b4742b !important;
+}
+.patreon a:hover{
+    color:#fff673 !important;
+}
+a:not([href]) {
+    color:#C4E7EB40 !important;
+}
+.logo:hover{
+    box-shadow:#80f6ff4f 0 0 30px;
+}
+.logo{
+    transition:box-shadow 0.2s,color 0.2s;
+}
+/*#endregion*/
+h5 a{
+    color:#6767ff;
+    border-bottom:2px solid;
+    padding:0 0 4px;
+    transition: text-shadow 0.2s;
+}
+h5 a:hover{
+    text-shadow: #000000 0 0 5px,rgb(255, 255, 255) 0 0 30px;
+}
+.secCloud h5 a{
+    color:#ffb867;
+}
+
+.ulBand{
+    border:0;
+    padding:0;
+}
+.liBand{
+    border:0;
+    padding:0;
+}
+
+.bandcamp{
+    margin:0;
+    border: 0;
+    width: 250px;
+    height: 250px;
+}
+.bandcamp a{
+    display:none;
+}
+@media screen and (max-width: 755px){
+    .logo a{
+        display:none;}
+    .alt-logo{
+        display:inline;}
+    nav ul{
+        text-align:center;}
+    section:not(.spacing){
+        margin:2px 0 2px 0;}
+    body {
+        background-position-x:0,100%,50%,0, center;
+        background-position-y:0,0,75px,0, center;
+        background-size:10%,10%,250px,cover,cover;
+        background-attachment: fixed;
+        }
+    .header-head{
+        text-align:center;
+        padding:80px 0 80px 0;}
+    li {
+        display: inline-block;
+        font-size: 8px;
+        padding:0px 0px 4px;
+    }
+    nav ul li:not(.logo) a {
+        vertical-align: 0px;
+    }
+    section h5{
+        font-size:10px;
+    }
+    .bandcamp{
+        border: 0;
+        width: 170px;
+        height: 170px;
+    }
+}
+footer{
+    padding:10px 0;
+}
