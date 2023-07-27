@@ -74,7 +74,7 @@ section:not(.spacing){
     box-shadow:rgb(0, 0, 0) 0 0 1px;
     color:#fff;
     padding:10px;
-    margin:6px 10%;
+    margin:6px max(calc( ( 100% - ( 700px + 10% ) ) / 2), 0px );
     display:block;
     flex-direction:row;
 }
@@ -83,7 +83,9 @@ section:not(.spacing) h5{
     text-shadow:rgba(0, 119, 255, 0.548) 0 0 20px !important;
 }
 .header-head{
-    padding:0px 80px 20px;
+    padding:0px  max(calc( ( 100% - ( 900px + 10% ) ) / 2)) 20px;
+    display: flex;
+    align-items: center;
 }
 .logo a{
     background-image:url(/res/img/logo.png);
