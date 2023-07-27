@@ -77,6 +77,8 @@ section:not(.spacing){
     margin:6px max(calc( ( 100% - ( 700px + 10% ) ) / 2), 0px );
     display:block;
     flex-direction:row;
+    backdrop-filter:blur(2px);
+    -webkit-backdrop-filter:blur(2px);
 }
 section:not(.spacing) h5{
     color:#fff;
