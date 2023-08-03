@@ -1,0 +1,113 @@
+body {
+    font-family:Arial;
+    background-color:#000000;
+    background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
+    linear-gradient(to left, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
+    url(../../res/img/bgpostb.png);
+    background-position-x:0,100%, center;
+    background-position-y:0,0, center;
+    background-repeat:repeat;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+}
+#page-container{
+    position:relative;
+    min-height:100vh;
+}
+#content-wrap{
+    padding-top:50px;
+    padding-bottom:60px;
+}
+h1, h2, h3, h4, h5, h6, p, a{
+    font-family:Arial;
+    margin: 15px;
+    padding: 0 15px;
+    color:#c6e9ff;
+    text-shadow: #000000 0 0 5px,rgba(74, 219, 255, 0.706) 0 0 25px;
+} 
+h1{font-size:35px}
+h4, h5{font-size:20px}
+h5{color:rgb(255, 255, 255);text-shadow: #000000 0 0 5px;}
+p{font-size:15px}
+
+a{
+    margin:20px 40px;
+    display:inline-block;
+    color:#c6e9ff;
+    font-size: 15px;
+}
+a img{
+    margin:0 7px 0 0;
+    -webkit-transform: translateY(25%);
+    -ms-transform: translateY(25%);
+    transform: translateY(25%);
+}
+a:hover{color:#ffffff;text-shadow:#80f7ff 0 0 30px;}
+a:active{color:#ffe2e2;text-shadow:#ff80a6 0 0 30px;}
+
+header{
+    margin:30px 10px;
+    padding:0px  max(calc( ( 100% - ( 900px + 10% ) ) / 2)) 20px;
+    display:flex;
+    align-items:center;
+    text-align:left;
+}
+
+section{
+    background:rgba(0, 0, 0, 0.4);
+    box-shadow:#000000 0 0 1px;
+    color:#fff;
+    padding:10px;
+    margin:6px max(calc( ( 100% - ( 700px + 10% ) ) / 2), 0px );
+    display:block;
+    flex-direction:row;
+    backdrop-filter:blur(2px);
+    -webkit-backdrop-filter:blur(2px);
+}
+video {
+    width: 48%    !important;
+    height: auto   !important;
+    border-radius: 5px;
+}
+/*#region NAV BAR*/
+nav {
+    background:linear-gradient(to right,rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.8));
+    box-shadow:#000000 0 0 10px;
+    margin:0;
+    padding:0px 10% 0px ;
+    width:100%;
+    position:fixed;
+    z-index: 1;
+}
+nav a{
+    color:#C4E7EB90;
+    vertical-align: sub;
+    padding:9px 14px 5px;
+    margin:0px;
+    text-decoration:none;
+    text-shadow: #000000 0 0 5px;
+    transition:text-shadow 0.2s,color 0.2s;
+    font-size: 18px;
+    font-family: lucida console;
+}
+nav a:hover{
+    color:white;  
+    text-shadow:#80f7ff 0 0 30px;
+}
+nav a:active{
+    color:rgb(255, 226, 226);  
+    text-shadow:#ff80a6 0 0 30px;
+}
+nav a.contact{color:#b4742b}
+nav a.contact:hover{color:#fff673}
+/*#endregion*/
+
+footer{
+    background:#000000;
+    color:white;
+    position: absolute;
+    bottom:0;
+    width:100%;
+    padding:10px 0;
+}
