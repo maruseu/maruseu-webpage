@@ -10,6 +10,8 @@
     font-family: "RegularPix";
     src: url("../../res/font/12pt.ttf");
 }
+.text {cursor: url(../../res/img/c_link.png),auto;}
+.url {cursor: url(../../res/img/c_link.png),auto;}
 body {
     background-color:black;
     background-image:linear-gradient(to right, rgba(0, 0, 0, 0.502),rgba(0, 0, 0, 0)),

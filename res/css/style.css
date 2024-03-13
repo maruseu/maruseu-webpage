@@ -1,3 +1,4 @@
+.url {}
 body {
     font-family:Arial;
     background-color:#000000;
@@ -10,6 +11,7 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    cursor: url(../../res/img/c_reg.png),auto !important;
 }
 #page-container{
     position:relative;
@@ -20,6 +22,7 @@ body {
     padding-bottom:60px;
 }
 h1, h2, h3, h4, h5, h6, p, a{
+    cursor: url(../../res/img/c_text.png),auto !important;
     font-family:Arial;
     margin: 15px;
     padding: 0 15px;
@@ -36,6 +39,7 @@ a{
     display:inline-block;
     color:#c6e9ff;
     font-size: 15px;
+    cursor: url(../../res/img/c_link.png),auto !important;
 }
 a img{
     margin:0 7px 0 0;
@@ -99,6 +103,25 @@ nav a:active{
     color:rgb(255, 226, 226);  
     text-shadow:#ff80a6 0 0 30px;
 }
+.buttong{
+    background-color: #50909a;
+    font-size: 16px;
+    font-weight: bold;
+    color: #FFFFFF;
+    padding: 5px 20px;
+    text-align: center;
+    transition-duration: 0.4s;
+    text-decoration: none;
+    text-shadow:none;
+    border-radius: 5px;
+    overflow: hidden;
+    margin:0 40px;
+    border-style:solid;
+    border-width: 2px;
+    border-color: #000000;
+}
+.buttong:hover{color:#fff673}
+
 nav a.contact{color:#b4742b}
 nav a.contact:hover{color:#fff673}
 /*#endregion*/
