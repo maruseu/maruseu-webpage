@@ -1,6 +1,6 @@
 .url {}
 body {
-    font-family:Arial;
+    font-family:Garamond;
     background-color:#000000;
     background-image:linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
     linear-gradient(to left, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
@@ -23,7 +23,7 @@ body {
 }
 h1, h2, h3, h4, h5, h6, p, a{
     cursor: url(../../res/img/c_text.png),auto !important;
-    font-family:Arial;
+    font-family:Garamond;
     margin: 15px;
     padding: 0 15px;
     color:#c6e9ff;
@@ -94,6 +94,10 @@ nav a{
     transition:text-shadow 0.2s,color 0.2s;
     font-size: 18px;
     font-family: lucida console;
+}
+nav a img{
+	padding:0px;
+	transform:none;
 }
 nav a:hover{
     color:white;  
