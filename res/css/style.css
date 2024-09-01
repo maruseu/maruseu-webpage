@@ -93,7 +93,7 @@ nav a{
     text-shadow: #000000 0 0 5px;
     transition:text-shadow 0.2s,color 0.2s;
     font-size: 18px;
-    font-family: lucida console;
+    font-family:Garamond;
 }
 nav a img{
 	padding:0px;
