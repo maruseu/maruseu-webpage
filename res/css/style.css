@@ -58,6 +58,18 @@ header{
     text-align:left;
 }
 
+.counter{
+    background:unset;
+    box-shadow:unset;
+    color:unset;
+    padding:10px;
+    margin:6px max(calc( ( 100% - ( 700px + 10% ) ) / 2), 0px );
+    display:block;
+    flex-direction:row;
+    backdrop-filter:unset;
+    -webkit-backdrop-filter:unset;
+    text-align:right;
+}
 section{
     background:rgba(0, 0, 0, 0.4);
     box-shadow:#000000 0 0 1px;
