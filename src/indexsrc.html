@@ -32,12 +32,7 @@
 
     </head>
     <body>
-	
-        <nav>
-		<a href="/index.html"><img width="16px" src="/favicon.ico"> Home</img></a>
-		<!--<a href="/blog.html">Blog</a>-->
-		<a href="/works.html">Works</a>
-        </nav>
+	{{nav}}
 	<!--<img class="bgthing" width="60%" src="res/img/nc.webp"></img>
 	<img class="bgthing rotate" width="60%" src="res/img/or.png"></img>-->
 
@@ -83,6 +78,15 @@
 		    <a href="mailto:marceucamp@gmail.com"><div class="socialTxt">
 				    <img class="socialImg" width="24px" src="/res/img/mail.png"/>Email</div></a>
                     </div>
+                </section>
+                <section>
+                    <h5>Latest articles</h5>
+                    <div class="articlelist">
+			    {{PLACEHOLDER}}
+                    </div>
+			    <div style="width:100%; text-align:right;" >
+				<a class="buttong" href="/blog.html"> See more ➤</a>
+			    </div>
                 </section>
 
                 <section>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type"  content="text/html; charset=utf-8">
+    
+	<meta name="title"               content="{{title}}">
+	<meta name="description"         content="maruseu.moe blog article: {{title}}">
+	<meta name="keywords"            content="maruseu, {{title}}">
+        <meta name="viewport"            content="width=device-width">
+        <!-- Open Graph metatags for sharing -->
+	<meta property="og:title"        content="{{title}}">
+        <meta property="og:site_name"    content="maruseu.moe">
+        <meta property="og:image:type"   content="image/png">
+        <meta property="og:image"        content="https://maruseu.moe/res/img/maru.png">
+	<meta property="og:url"          content="https://maruseu.moe{{url}}">
+	<meta property="og:description"  content="maruseu.moe blog: {{title}}">
+        <!-- Twitter metatags for sharing -->
+	<meta name="twitter:card"        content="{{title}}">
+        <meta name="twitter:site"        content="@nyaruseu">
+	<meta name="twitter:title"       content="{{title}}">
+        <meta name="twitter:image"       content="https://maruseu.moe/res/img/maru.png">
+	<meta name="twitter:url"         content="https://maruseu.moe{{url}}">
+	<meta name="twitter:description" content="maruseu.moe blog: {{title}}">
+
+	<title>{{title}}</title>
+        <link rel="shortcut icon" sizes="196x196" href="/favicon-196.png">
+        <link rel="icon" sizes="196x196" href="/favicon-196.png" type="image/png">
+        <link rel='icon' href='/favicon.ico'/>
+        <link rel="stylesheet" href="/res/css/style.css">
+
+    </head>
+    <body>
+	    {{nav}}
+        <div id="page-container">
+            <div id="content-wrap">
+                <header>
+                        <img width="80px" style="border-radius: 10px;" src="/favicon-196.png"/>
+                        <div width="500px">
+                            <h1>Nyarublog</h1>
+                            <h4>....</h4>
+                        </div>
+                </header>
+
+		<section class="secbig counter">
+		<!-- FC2 Counter  Starts here -->
+		<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39902148&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39902148&main=1" /></noscript>
+		<!-- FC2 Counter  Ends here -->
+		</section>
+                
+                <section class="secbig">
+                <section class="secbig articlesec">
+
+			{{ARTICLE}}
+
+                </section>
+                </section>
+        </div>
+    </body>
+</html>
+

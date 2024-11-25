@@ -1,0 +1,5 @@
+        <nav>
+		<a href="/index.html"><img width="16px" src="/favicon.ico"> Home</img></a>
+		<a href="/blog.html">Blog</a>
+		<a href="/works.html">Works</a>
+        </nav>
