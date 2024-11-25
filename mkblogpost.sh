@@ -14,7 +14,7 @@ for (( page=1; page<=pagesTot; page++ )); do
 	pagesNav="$pagesNav""&nbsp;<a href=\"blog_${page}.html\"> ${page} </a>&nbsp;"
 done
 pagesNav="$pagesNav"" ]</div><div class=\"treeview\"><a href=\"blogtree.html\">Tree view</a><div></section>"
-pagesNav="" #disable pages for now
+#pagesNav="" #disable pages for now
 
 echo "$pagesNav"
 
